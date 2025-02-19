@@ -117,6 +117,29 @@ The Weather Dashboard is a React-based application that provides real-time weath
 - useEffect for API calls and side effects
 - Custom hooks for data fetching
   
+### Extra Features Implemented 🚀
+
+1. **Enhanced UI/UX**
+   - Dynamic backgrounds based on weather conditions
+   - Smooth animations and transitions
+
+2. **Advanced Weather Data**
+   - 24-hour temperature forecast
+   - Detailed metrics:
+     - Wind speed
+     - Humidity levels
+     - Pressure readings
+
+3. **Visual Enhancements**
+   - Interactive temperature charts using Recharts
+   - Weather-specific animations:
+     - Particle effects for clear weather
+     - Custom backgrounds for different conditions
+
+4. **Technical Improvements**
+   - API error handling
+   - Performance optimizations
+
 ## 👏 Acknowledgments
 
 - OpenWeather API for weather data
