@@ -53,27 +53,32 @@ A sleek and responsive weather dashboard that provides real-time weather informa
 3. Start the development server (npm run dev)
    
 ## 📦 Project Structure
-weather-dashboard/
-├── public/
-│   ├── favicon.jpeg
-├── src/
-│   ├── components/
-│   │   ├── WeatherCard.jsx
-│   │   └── ui/
-│   │       ├── grid-pattern.jsx
-│   │       ├── grid-background.jsx
-│   │       └── sparkles.jsx
-│   │
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-│
-├── .env
-├── .gitignore
-├── package.json
-├── tailwind.config.js
-├── vite.config.js
-└── README.md
+📁 weather-dashboard/          # Root directory
+    |
+    |-- 📁 public/            # Static files directory
+    |     |-- favicon.jpeg    # Website favicon
+    |
+    |-- 📁 src/              # Source code directory
+    |     |
+    |     |-- 📁 components/ # React components
+    |     |     |
+    |     |     |-- WeatherCard.jsx    # Main weather component
+    |     |     |
+    |     |     |-- 📁 ui/   # UI components directory
+    |     |          |-- grid-pattern.jsx     # Grid pattern effect
+    |     |          |-- grid-background.jsx  # Background grid
+    |     |          |-- sparkles.jsx         # Sparkle effects
+    |     |
+    |     |-- App.jsx        # Root React component
+    |     |-- main.jsx       # Entry point
+    |     |-- index.css      # Global styles
+    |
+    |-- .env                 # Environment variables
+    |-- .gitignore          # Git ignore rules
+    |-- package.json        # Project dependencies
+    |-- tailwind.config.js  # Tailwind configuration
+    |-- vite.config.js      # Vite configuration
+    |-- README.md           # Project documentation
 
 ## 👏 Acknowledgments
 
