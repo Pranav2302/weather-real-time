@@ -2,7 +2,7 @@
 
 A sleek and responsive weather dashboard that provides real-time weather information with beautiful, dynamic backgrounds. Built with React, Vite, and TailwindCSS, featuring OpenWeather API integration.
 
-![Weather Dashboard Demo](weather.gif)
+![Weather Dashboard Demo](image.png)
 
 ## 🎯 Live Demo
 
