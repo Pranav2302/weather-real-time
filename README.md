@@ -56,21 +56,21 @@ A sleek and responsive weather dashboard that provides real-time weather informa
 <div style="display: flex; justify-content: space-between; gap: 20px;">
 
 <pre>
-📁 weather-dashboard/          # Root directory
+📁 weather-dashboard/           # Root directory
 |
-|-- 📁 public/            # Static files directory
-|     |-- favicon.jpeg    # Website favicon
+|-- 📁 public/                  # Static files directory
+|     |-- favicon.jpeg          # Website favicon
 |
-|-- 📁 src/              # Source code directory
+|-- 📁 src/                      # Source code directory
 |     |
 |     |-- 📁 components/ # React components
 |     |     |
-|     |     |-- WeatherCard.jsx    # Main weather component
+|     |     |-- WeatherCard.jsx           # Main weather component
 |     |     |
 |     |     |-- 📁 ui/   # UI components directory
-|          |-- grid-pattern.jsx    # Grid pattern effect
-|          |-- grid-background.jsx # Background grid
-|          |-- sparkles.jsx        # Sparkle effects
+|          |-- grid-pattern.jsx           # Grid pattern effect
+|          |-- grid-background.jsx        # Background grid
+|          |-- sparkles.jsx               # Sparkle effects
 |     |
 |     |-- App.jsx        # Root React component
 |     |-- main.jsx       # Entry point
@@ -85,7 +85,38 @@ A sleek and responsive weather dashboard that provides real-time weather informa
 </pre>
 
 <div>
+  
+# Weather Dashboard - Technical Documentation
+## Core Concept
+The Weather Dashboard is a React-based application that provides real-time weather information with an intuitive user interface and dynamic backgrounds. It leverages the OpenWeather API for data and implements modern web technologies for visualization.
 
+## Key Components
+
+### 1. WeatherCard Component
+- **Purpose**: Main container for weather information
+- **Functionality**:
+  - Handles API calls to OpenWeather
+  - Manages state for weather data
+  - Controls background patterns
+  - Renders weather metrics and charts
+
+### 2. Background Effects
+- **Types**:
+  - Clear Weather: Sparkle particles using tsParticles
+  - Rain: Animated grid pattern
+  - Snow: White particle effect
+  - Cloudy: Subtle grid background
+
+### 3. API Integration
+- **Endpoints Used**:
+  - Current Weather: For immediate conditions
+  - 5-Day Forecast: For hourly predictions
+
+### 4. State Management
+- React useState for local state
+- useEffect for API calls and side effects
+- Custom hooks for data fetching
+  
 ## 👏 Acknowledgments
 
 - OpenWeather API for weather data
