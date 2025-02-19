@@ -127,6 +127,6 @@ The Weather Dashboard is a React-based application that provides real-time weath
 ## 📧 Contact & Support
 
 - Created by [Pranav Kamble]
-- LinkedIn: [@yourhandle](https://www.linkedin.com/in/pranav-kamble-a92a99204)
+- LinkedIn: [@LinkedIn](https://www.linkedin.com/in/pranav-kamble-a92a99204)
 - Email: Pvkamble02@gmail.com
 
