@@ -145,7 +145,6 @@ The Weather Dashboard is a React-based application that provides real-time weath
 - OpenWeather API for weather data
 - Aceternity UI for background patterns
 - TailwindCSS community
-- React ecosystem maintainers
 
 ## 📧 Contact & Support
 
