@@ -115,7 +115,7 @@ The Weather Dashboard is a React-based application that provides real-time weath
 ### 4. State Management
 - React useState for local state
 - useEffect for API calls and side effects
-- Custom hooks for data fetching
+  
   
 ### Extra Features Implemented 🚀
 
