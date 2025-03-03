@@ -12,9 +12,10 @@ const WeatherCard = () => {
   const [bgPattern, setBgPattern] = useState("clear");
   const [error, setError] = useState("");
   const [forecast, setForecast] = useState(null);
-  const API_KEY = "18158c1652af7c9ab554bc0efebb2c6c";
+ 
+  const API_KEY = import.meta.env.VITE_API_KEY;
 
-  // Add this function to determine background pattern based on weather
+  // this function to determine background pattern based on weather
   const getBackgroundPattern = (weatherCode, temp) => {
     if (!weatherCode) return "clear";
     
@@ -22,11 +23,11 @@ const WeatherCard = () => {
     if (code.includes('clear')) {
       return "clear";
     } else if (code.includes('rain')) {
-      return "rain";
+      return "rainy";
     } else if (code.includes('snow')) {
       return "snow";
-    } else if (code.includes('cloud')) {
-      return "clouds";
+    } else if (code.includes('clouds')) {
+      return "cloudy";
     }
     return "clear"; // default pattern
   };
@@ -124,7 +125,7 @@ const WeatherCard = () => {
         />
       )}
       
-      {bgPattern === "rain" && (
+      {bgPattern === "rainy" && (
         <div className="absolute inset-0">
           <GridPattern
             width={40}
@@ -150,7 +151,7 @@ const WeatherCard = () => {
         />
       )}
 
-      {bgPattern === "clouds" && (
+      {bgPattern === "cloudy" && (
         <div className="absolute inset-0">
           <GridPattern
             width={60}
