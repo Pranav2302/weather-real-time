@@ -99,7 +99,9 @@ const WeatherCard = () => {
           fetchWeatherData();
         }
         else{
-          console.log("Choose diferent city")
+          console.log("Choose diferent city");
+          toast(error.message || "Choose diferent city with letter greater then 3");
+          setError("Choose diferent city with letter greater then 3")
         }
       }
     }, 500);
