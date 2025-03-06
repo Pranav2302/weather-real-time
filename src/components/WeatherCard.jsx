@@ -4,6 +4,8 @@ import { IconCloud, IconSun, IconCloudRain, IconSnowflake } from "@tabler/icons-
 import { SparklesCore } from "./ui/sparkles";
 import { GridPattern } from "./ui/grid-pattern";
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
+import {Toaster} from "./ui/sonner"
+import { toast } from "sonner"
 
 const WeatherCard = () => {
   const [weather, setWeather] = useState(null);
@@ -84,7 +86,8 @@ const WeatherCard = () => {
         setWeather(null);
         setForecast(null);
         setBgPattern("clear");
-        setError(error.message || "Failed to fetch weather data");
+        toast(error.message || "Failed to fetch weather data")
+        setError(error.message);
       } finally {
         setLoading(false);
       }
@@ -92,7 +95,12 @@ const WeatherCard = () => {
 
     const timeoutId = setTimeout(() => {
       if (city.trim()) {
-        fetchWeatherData();
+        if(city.length >= 3){
+          fetchWeatherData();
+        }
+        else{
+          console.log("Choose diferent city")
+        }
       }
     }, 500);
 
@@ -109,9 +117,11 @@ const WeatherCard = () => {
       description: item.weather[0].description
     }));
   };
-
+ 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-slate-950 relative overflow-hidden">
+      <Toaster/>
+      
       {/* Dynamic Background based on weather */}
       {bgPattern === "clear" && (
         <SparklesCore
@@ -225,6 +235,8 @@ const WeatherCard = () => {
                     <p className="text-xs sm:text-sm text-slate-400">Pressure</p>
                     <p className="text-base sm:text-xl">{weather.main?.pressure} hPa</p>
                   </div>
+                  
+
                 </div>
               </div>
 
